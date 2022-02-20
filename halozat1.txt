@@ -1,0 +1,86 @@
+------Dinamikus routing------
+
+rit/
+   |-hello.ios	
+
+mkdir rip
+cd rip
+code .
+
+Visusal studio code
+Bővítmény: Cisco IOS Syntax
+
+.ios kiterjesztésű fájlok
+
+Megjegyzés: !
+
+Mentés: rip_01.pkt
+Mentés: rip_02_dns.pkt
+
+
+----Feladat----
+Mentés:
+	rip_03_net3.pkt
+	net3.ios
+
+
+
+
+
+195.1.1.0/24
+    195.1.1.0/29
+    195.1.1.8/29
+    195.1.1.16/29
+	195.1.1.16/30	
+	195.1.1.20/30	
+	195.1.1.24/30	
+	195.1.1.28/30	
+
+    4 /29
+    3 /29
+    2 /30
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nr.	Állomás szám	Hálózat	Maszk		Első cím	Utolsó cím	Szórás		Feladat/ 		VLAN Név	VLAN		Router
+1.	20	 	255.255.255.224 	192.168.1.1-30 	.31 	 			HelpDesk/HelpDesk	10		CegR3
+2.	10	 	255.255.255.240 	192.168.64-78	.79	 	 		Iroda/Iroda		10		CegR2
+3.	8	 	255.255.255.240 	192.168.64-78	.79 	 	 	 	Fejlesztés/Fejleszt	20		CegR3
+4.	6	 	 	 	 	 						Felügyelet/Felugyel	2		CegR3
+5.	5	 	 	 	 	 						Targyaló/Targyalo	20		CegR2
+6.	4	 	 	 	 	 						DMZ	 
+7.	3	 	 	 	 	 						Intra/Intra		30		CegR3
+8.	2	 	 	 	 	 						LPT/LPT			40		CegR3
+9.	2	 	 	 	 	 						CegR2-CegR3	 
+10.	2	 	 	 	 	 						CegR1-CegR2	 
+11.	2	 	 	 	 	 						CegR1-CegR3	 
+
+
+2^x-2>=gépszám
+20 IP -> 5 bit => /26 (32.5)
+
+
+192.168.1.0/24
+	192.168.1.0/27
+	192.168.1.32/27
+	192.168.1.64/27
+	    192.168.1.64/28
+	    192.168.1.64/28
+
+
+
+	
