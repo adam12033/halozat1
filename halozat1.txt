@@ -84,3 +84,27 @@ Nr.	Állomás szám	Hálózat	Maszk		Első cím	Utolsó cím	Szórás		Feladat/ 
 
 
 	
+
+----------------------------------------------------
+
+____IPV6____
+
+
+(
+Ipv4
+192.168.10.1
+4oktet
+)
+
+hextet
+
+Ipv6 340 szextillió
+Ipv4 4.3 milliárd
+
+globális unicast    2001
+link-local	    fe80
+loopback	    ::1/128  localhost
+unique local	    fc00::/7
+beépítettt Ipv4
+
+	
