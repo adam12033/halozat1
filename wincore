@@ -1,0 +1,10 @@
+Get-NetIPAddress
+New-NetIPAddress -IPAddress 192.168.10.10 -InterfaceAlias Ethernet -DefaultGateway 192.168.10.1 
+-PrefixLength 24
+
+Get-Command set*dns*
+set-DnsClientServerAddress -interfaceIndex 6 -ServerAddresses ("192.168.10.1","8.8.8.8")
+
+add-computer -domainname tartomány.hu
+
+restart-computer
